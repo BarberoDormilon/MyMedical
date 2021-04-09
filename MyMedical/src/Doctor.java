@@ -1,19 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author windows
- */
 public class Doctor {
+    //Atributos
     int id;
     String name;
     String speciality;
-    
+
+    Doctor(){
+        System.out.println("Construyendo el Objeto Doctor");
+    }
+
+    Doctor(String name){
+        System.out.println("El nombre del Doctor asignado es: " + name);
+    }
+
+    //Comportamientos
     public void showName(){
         System.out.println(name);
     }
+
 }
